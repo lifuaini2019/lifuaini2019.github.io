@@ -227,5 +227,38 @@
 
 
   </div>
+  <!-- 引入 highlight.js 库 -->
+<script src="path-to-highlight.js"></script>
+
+<!-- 引入 clipboard.js 库 -->
+<script src="path-to-clipboard.js"></script>
+
+<script>
+  // 初始化 highlight.js
+  hljs.initHighlightingOnLoad();
+
+  // 找到所有代码块并添加复制按钮
+  document.addEventListener('DOMContentLoaded', function () {
+    var codeBlocks = document.querySelectorAll('pre code');
+    codeBlocks.forEach(function (codeBlock) {
+      var copyButton = document.createElement('button');
+      copyButton.className = 'copy-button';
+      copyButton.textContent = 'Copy';
+      copyButton.addEventListener('click', function () {
+        // 复制代码到剪贴板
+        var codeToCopy = codeBlock.textContent;
+        navigator.clipboard.writeText(codeToCopy)
+          .then(function () {
+            alert('Code copied to clipboard!');
+          })
+          .catch(function (error) {
+            console.error('Copy failed: ', error);
+          });
+      });
+      codeBlock.parentNode.insertBefore(copyButton, codeBlock);
+    });
+  });
+</script>
+
 </body>
 </html>

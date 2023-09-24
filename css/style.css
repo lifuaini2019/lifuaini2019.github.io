@@ -1344,3 +1344,19 @@ pre .javascript .function {
   margin-right: 5px;
   display: inline-block;
 }
+.copy-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+/* 高亮显示代码块样式 */
+pre code {
+  display: block;
+  padding: 10px;
+  overflow-x: auto;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+}
