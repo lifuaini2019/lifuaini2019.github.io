@@ -1,107 +1,183 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>常用命令集合 | 保保博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="重启服务器（Reboot）： Copy codesudo reboot解释：这个命令用于重新启动服务器，将服务器关机然后再次启动。 关闭服务器（Shutdown）： arduinoCopy codesudo shutdown -h now解释：这个命令用于立即关闭服务器，即刻停止服务器的运行。 查看服务器状态（Uptime）： bashCopy codeuptime解释：这个命令用于查看服务器的运">
-<meta property="og:type" content="article">
-<meta property="og:title" content="常用命令集合">
-<meta property="og:url" content="https://your-github-username.github.io/2023/09/23/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/index.html">
-<meta property="og:site_name" content="保保博客">
-<meta property="og:description" content="重启服务器（Reboot）： Copy codesudo reboot解释：这个命令用于重新启动服务器，将服务器关机然后再次启动。 关闭服务器（Shutdown）： arduinoCopy codesudo shutdown -h now解释：这个命令用于立即关闭服务器，即刻停止服务器的运行。 查看服务器状态（Uptime）： bashCopy codeuptime解释：这个命令用于查看服务器的运">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-09-23T07:01:25.000Z">
-<meta property="article:modified_time" content="2023-09-24T09:20:57.306Z">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="保保博客" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <link rel="alternate" href="/atom.xml" title="保保博客" type="application/atom+xml" />
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    
+    <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
+    
+    
+<link rel="stylesheet" type="text/css" href="/css/page.css">
+<link rel="stylesheet" type="text/css" href="/css/post.css">
 
-  
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">保保博客</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">常用命令学习</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://your-github-username.github.io"></form>
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/css/undefined.css">
+    <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script defer type="text/javascript" src="/js/util.js"></script>
+    <script defer type="text/javascript" src="/js/clipboard.min.js"></script>
+    <script defer type="text/javascript" src="/js/scrollspy.js"></script>
+    <script defer type="text/javascript" src="/js/fontawesome-all.min.js"></script>
+    <script defer type="text/javascript" src="/js/lightgallery.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-fullscreen.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-hash.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-pager.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-thumbnail.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-zoom.min.js"></script>
+    
+    
+    
+    <script defer type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      var cb = null;
+      var els = $(".post figure.highlight");
+      if (els.length) {
+        // Enabled Hexo highlight line number.
+        $(els).each(function (i, e) {
+          // $(e).before("<button class=\"copy button\">Copy</button>");
+          $(e).before([
+            "<div class=\"code-titlebar\">",
+              "<div class=\"titlebar-left\">",
+                "<button class=\"copy\" aria-label=\"Copy\"><i class=\"far fa-copy\"></i></button>",
+              "</div>",
+              "<div class=\"titlebar-center\">",
+                "code",
+              "</div>",
+              "<div class=\"titlebar-right\">",
+                "<button class=\"button-dot dot-minimize\" aria-label=\"Decoration\"></button>",
+                "<button class=\"button-dot dot-maximize\" aria-label=\"Decoration\"></button>",
+                "<button class=\"button-dot dot-close\" aria-label=\"Decoration\"></button>",
+              "</div>",
+            "</div>"
+          ].join(""));
+        });
+        cb = new ClipboardJS("button.copy", {
+          "target": function (trigger) {
+              // Get target element by DOM API.
+              return trigger.parentNode.parentNode.nextElementSibling.firstChild.firstChild.firstChild.lastChild.firstChild.firstChild;
+          }
+        });
+      } else {
+        // Disabled Hexo highlight line number.
+        els = $(".post pre code");
+        $(els).each(function (i, e) {
+          // Add button before pre, not code.
+          // $(e).parent().before("<button class=\"copy button\">Copy</button>");
+          $(e).before([
+            "<div class=\"code-titlebar\">",
+              "<div class=\"titlebar-left\">",
+                "<button class=\"copy\" aria-label=\"Copy\"><i class=\"far fa-copy\"></i></button>",
+              "</div>",
+              "<div class=\"titlebar-center\">",
+                "code",
+              "</div>",
+              "<div class=\"titlebar-right\">",
+                "<button class=\"button-dot dot-minimize\" aria-label=\"Decoration\"></button>",
+                "<button class=\"button-dot dot-maximize\" aria-label=\"Decoration\"></button>",
+                "<button class=\"button-dot dot-close\" aria-label=\"Decoration\"></button>",
+              "</div>",
+            "</div>"
+          ].join(""));
+        });
+        cb = new ClipboardJS("button.copy", {
+          "target": function (trigger) {
+              // Get target element by DOM API.
+              return trigger.parentNode.parentNode.nextElementSibling;
+          }
+        });
+      }
+      cb.on("success", function (e) {
+        e.clearSelection();
+        var trigger = e.trigger;
+        // Change button text as a user tip.
+        trigger.innerHTML = "<i class=\"far fa-check-square\"></i>";
+        $(trigger).addClass("copied");
+        // Change button text back;
+        setTimeout(function () {
+          trigger.innerHTML = "<i class=\"far fa-copy\"></i>";
+          $(trigger).removeClass("copied");
+        }, 1500);
+      });
+    });
+    </script>
+    
+    <script defer type="text/javascript" src="/js/custom.js"></script>
+    <title>常用命令集合 | 保保博客 - 常用命令学习</title>
+  <meta name="generator" content="Hexo 6.3.0"></head>
+  <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN"  data-spy="scroll" data-target=".list-group">
+    
+<header id="header" class="header">
+  <div class="container">
+    <div class="header-container">
+      <div class="header-title">
+        <h1 class="title"><a href="/">保保博客</a></h1>
+        <h2 class="subtitle">常用命令学习</h2>
       </div>
+      
     </div>
+    <nav id="nav" class="nav">
+      <a id="nav-toggle" class="nav-toggle" aria-hidden="true"><i class="fas fa-bars" aria-label="Toggle Navbar"></i></a>
+      <ul id="menu" role="menubar" aria-hidden="false">
+        
+      </ul>
+    </nav>
   </div>
 </header>
 
-      <div class="outer">
-        <section id="main"><article id="post-常用命令集合" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/09/23/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/" class="article-date">
-  <time class="dt-published" datetime="2023-09-23T07:01:25.000Z" itemprop="datePublished">2023年09月23日</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      常用命令集合
-    </h1>
-  
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>重启服务器（Reboot）：</p>
+    <main id="main" class="main">
+      <div class="container">
+        <div class="main-container">
+          <div class="content">
+            
+<div id="post" class="page">
+  
+  <article class="article post card" itemscope itemtype="http://schema.org/Article">
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="https://your-github-username.github.io/2023/09/23/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="John Doe">
+       <meta itemprop="description" content="李保个人博客">
+       <meta itemprop="image" content="/">
+      </span>
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="保保博客">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">常用命令集合</h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2023-09-23T15:01:25+08:00">2023年09月23日 15:01:25</time></span>
+        </span>
+        
+        
+        
+      </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      <p>重启服务器（Reboot）：</p>
 <p>Copy code<br>sudo reboot<br>解释：这个命令用于重新启动服务器，将服务器关机然后再次启动。</p>
 <p>关闭服务器（Shutdown）：</p>
 <p>arduino<br>Copy code<br>sudo shutdown -h now<br>解释：这个命令用于立即关闭服务器，即刻停止服务器的运行。</p>
@@ -120,7 +196,7 @@
 <p>查找文件（find）：</p>
 <p>lua<br>Copy code<br>find &#x2F;path&#x2F;to&#x2F;search -name “filename”<br>解释：这个命令用于在指定路径下查找文件。</p>
 <p>创建文件夹（mkdir）：</p>
-<h3 id="解释：这个命令用于创建新的文件夹或目录。"><a href="#解释：这个命令用于创建新的文件夹或目录。" class="headerlink" title="解释：这个命令用于创建新的文件夹或目录。"></a>解释：这个命令用于创建新的文件夹或目录。</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> /path/to/directory</span><br></pre></td></tr></table></figure>
+<h3 id="解释：这个命令用于创建新的文件夹或目录。"><a href="#解释：这个命令用于创建新的文件夹或目录。" class="headerlink" title="解释：这个命令用于创建新的文件夹或目录。"></a>解释：这个命令用于创建新的文件夹或目录。</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> /path/to/directory</span><br></pre></td></tr></table></figure>
 <p>解释：这个命令用于创建新的文件夹或目录。</p>
 <p>复制文件（cp）：</p>
 <p>bash<br>Copy code<br>cp sourcefile destination<br>解释：这个命令用于复制文件或目录到指定位置。</p>
@@ -137,146 +213,97 @@
 <p>mv sourcefile destination<br>解释：这个命令用于移动文件或目录到指定位置。</p>
 <p>rm filename<br>解释：这个命令用于删除指定的文件。</p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://your-github-username.github.io/2023/09/23/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/" data-id="clmx6ozz70002g8l53gh1fjgb" data-title="常用命令集合" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
+    </main>
+    <footer class="post-footer">
       
     </footer>
-  </div>
-  
-    
-<nav id="article-nav">
+  </article>
   
   
-    <a href="/2023/09/23/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C%E6%A0%B7%E6%9D%BF/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">后一篇</strong>
-      <div class="article-nav-title">你好世界</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">九月 2023</a></li></ul>
+  <nav class="page-nav">
+    <div class="page-nav-next page-nav-item">
+      
+      <a href="/2023/09/23/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C%E6%A0%B7%E6%9D%BF/" rel="next" title="你好世界"><i class="fas fa-angle-left"></i><span class="nav-title">你好世界</span></a>
+      
     </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/09/23/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/">常用命令集合</a>
-          </li>
-        
-          <li>
-            <a href="/2023/09/23/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C%E6%A0%B7%E6%9D%BF/">你好世界</a>
-          </li>
-        
-      </ul>
+    <div class="page-nav-prev page-nav-item">
+      
     </div>
-  </div>
-
+  </nav>
   
+  
+</div>
+
+          </div>
+          
+          
+          
+<aside class="sidebar" id="sidebar" style="background: url(/images/background.png);">
+  
+  
+<div class="info sidebar-item" id="info">
+  
+  <h1 class="author-name">John Doe</h1>
+  <h2 class="author-description">李保个人博客</h2>
+  <div class="site-count">
+    
+  </div>
+  
+  <div class="rss">
+    <a class="rss-link button sidebar-item" href="/atom.xml"><i class="fas fa-rss"></i>RSS</a>
+  </div>
+  
+</div>
+
+
+  <div class="sidebar-sticky">
+    
+    
+    
+    
+    
+    <hr>
+    <div class="post-toc sidebar-item" id="toc-div">
+      <div><i class="fas fa-list-ol"></i>Table of Contents</div>
+      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#%E8%A7%A3%E9%87%8A%EF%BC%9A%E8%BF%99%E4%B8%AA%E5%91%BD%E4%BB%A4%E7%94%A8%E4%BA%8E%E5%88%9B%E5%BB%BA%E6%96%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9%E6%88%96%E7%9B%AE%E5%BD%95%E3%80%82"><span class="toc-text">解释：这个命令用于创建新的文件夹或目录。</span></a></li></ol></div>
+    </div>
+    
+    
+    
+    
+  </div>
 </aside>
+
+
+          
+        </div>
+      </div>
+    </main>
+    
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="back-to-top">
+      <button id="back-to-top"><i class="fas fa-angle-double-up" aria-label="Back to Top"></i></button>
+    </div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="copyright">
+          <span class="author">John Doe</span><span class="year"><i class="far fa-copyright"></i>2023</span>
+        </div>
         
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+      <div class="footer-right">
+        <div class="custom-info">
+          
+        </div>
+        <div class="powered-by">
+          Proudly Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> | Theme is <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
 
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
 
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-  <!-- 引入 highlight.js 库 -->
-<script src="path-to-highlight.js"></script>
-
-<!-- 引入 clipboard.js 库 -->
-<script src="path-to-clipboard.js"></script>
-
-<script>
-  // 初始化 highlight.js
-  hljs.initHighlightingOnLoad();
-
-  // 找到所有代码块并添加复制按钮
-  document.addEventListener('DOMContentLoaded', function () {
-    var codeBlocks = document.querySelectorAll('pre code');
-    codeBlocks.forEach(function (codeBlock) {
-      var copyButton = document.createElement('button');
-      copyButton.className = 'copy-button';
-      copyButton.textContent = 'Copy';
-      copyButton.addEventListener('click', function () {
-        // 复制代码到剪贴板
-        var codeToCopy = codeBlock.textContent;
-        navigator.clipboard.writeText(codeToCopy)
-          .then(function () {
-            alert('Code copied to clipboard!');
-          })
-          .catch(function (error) {
-            console.error('Copy failed: ', error);
-          });
-      });
-      codeBlock.parentNode.insertBefore(copyButton, codeBlock);
-    });
-  });
-</script>
-
-</body>
+  </body>
 </html>
