@@ -155,7 +155,7 @@
     </script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>你好世界 | 保持微笑 - 分享个人生活，日常所玩所见所闻与各种零散命令分享</title>
+    <title>GPT聊天-绑定Hexo博客域名指南 | 保持微笑 - 分享个人生活，日常所玩所见所闻与各种零散命令分享</title>
   <meta name="generator" content="Hexo 6.3.0"></head>
   <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
     
@@ -195,7 +195,7 @@
   
   <article class="article post card" itemscope itemtype="http://schema.org/Article">
     <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="https://bk.lifu.eu.org/2023/09/23/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C%E6%A0%B7%E6%9D%BF/">
+      <link itemprop="mainEntityOfPage" href="https://bk.lifu.eu.org/2024/01/03/GPT%E8%81%8A%E5%A4%A9-%E7%BB%91%E5%AE%9AHexo%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E6%8C%87%E5%8D%97/">
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
        <meta itemprop="name" content="LI BAO">
        <meta itemprop="description" content="免费博客不定时更新！！！！！">
@@ -206,11 +206,11 @@
       </span>
     </div>
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">你好世界</h1>
+      <h1 class="post-title" itemprop="name headline">GPT聊天-绑定Hexo博客域名指南</h1>
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2023-09-23T10:00:00+08:00">2023年09月23日 10:00:00</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2024-01-03T10:00:00+08:00">2024年01月03日 10:00:00</time></span>
         </span>
         
         
@@ -226,19 +226,56 @@
       </div>
     </header>
     <main class="post-main" itemprop="articleBody">
-      <p>欢迎来到Hexo！这是您的第一篇文章。检查文档以获取更多信息。如果您在使用 Hexo 时遇到任何问题，可以在故障排除中找到答案，也可以在GitHub上向我提问。</p>
-<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建一个新帖子"><a href="#创建一个新帖子" class="headerlink" title="创建一个新帖子"></a>创建一个新帖子</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;新文章标题&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>更多信息: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">写作</a></p>
-<h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-
-<p>更多信息: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">服务器</a></p>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>更多信息: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">生成</a></p>
-<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>更多信息: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">部署</a></p>
+      <p>我问:</p>
+<p>部署hexo博客时，能不能设置成自动绑定域名：bk.lifu.eu.org</p>
+<p>ChatGPT回答:</p>
+<p>Hexo 是一个静态网站生成器，你可以将你的博客部署到不同的主机或域名上。如果你想要将你的 Hexo 博客绑定到域名 “bk.lifu.eu.org”，你需要执行以下步骤：</p>
+<p>购买域名：首先，你需要拥有该域名。你可以在域名注册商那里购买 “lifu.eu.org” 域名，然后设置子域名 “bk”。<br>配置 DNS：一旦你拥有了域名，你需要登录到你的域名注册商的控制面板，然后配置 DNS 记录。你需要创建一个 CNAME 记录，将 “bk” 指向你的 Hexo 博客的主机名或 IP 地址。<br>修改 Hexo 配置：在你的 Hexo 项目中，打开 _config.yml 文件，找到 url 和 root 字段，然后将它们设置为你的域名。例如：<br>1<br>2<br>3<br>url: <a href="http://bk.lifu.eu.org/">http://bk.lifu.eu.org</a><br>root: &#x2F;</p>
+<p>重新生成静态网站：运行 hexo clean 来清除旧的生成文件，然后运行 hexo generate 来生成新的静态网站。<br>部署到服务器：将生成的静态文件部署到你的服务器或托管平台。这可以是通过 FTP、Git、或任何你偏好的方式。<br>设置 Web 服务器：如果你使用的是自己托管的服务器，确保你的 Web 服务器（比如 Nginx 或 Apache）配置正确，以便它可以识别到你的域名并提供相应的网页。<br>等待 DNS 传播：DNS 记录的更改需要时间传播到全球的 DNS 服务器，通常需要几小时或更长时间。一旦传播完成，你的域名 “bk.lifu.eu.org” 将会指向你的 Hexo 博客。<br>这些步骤应该能够让你将你的 Hexo 博客绑定到 “bk.lifu.eu.org” 域名。请注意，确保在购买域名和设置 DNS 记录时按照你的域名注册商的文档和界面操作，因为不同的注册商可能会有不同的步骤和界面。</p>
+<p>我问:</p>
+<p>我现在已绑定域名了，在博客的仓库目录下有个CNAME文件里面写着bk.lifu.eu.org，但我每次更新博文时，这个文件就消失了，又要操作重新绑定</p>
+<p>ChatGPT回答:</p>
+<p>CNAME 文件通常包含要绑定的自定义域名信息。如果你每次更新博文时都发现 CNAME 文件消失了，那可能是 Hexo 在生成新的静态网站时不保留这个文件。这可能是因为 Hexo 默认不会将 CNAME 文件包含在生成的静态文件中。</p>
+<p>为了解决这个问题，你可以尝试以下两种方法：</p>
+<p>方法一：手动添加 CNAME 文件</p>
+<p>每次生成静态网站后，手动将 CNAME 文件添加到生成的网站目录中。你可以在 Hexo 项目的根目录下创建一个 CNAME 文件，然后使用脚本或命令将它复制到生成的网站目录中。这样，每次生成网站时，CNAME 文件都会被包含在其中。</p>
+<p>在 Hexo 项目的根目录下创建一个名为 CNAME 的文件。<br>在 CNAME 文件中写入你的域名：”bk.lifu.eu.org”。<br>创建一个脚本或命令，将 CNAME 文件复制到生成的网站目录中。例如，你可以使用以下命令：<br>1<br>2<br>cp CNAME public&#x2F;</p>
+<p>在更新博文之后，运行生成静态网站的命令，然后运行复制 CNAME 文件的命令。<br>方法二：使用 Hexo 插件</p>
+<p>你还可以考虑使用 Hexo 插件来自动处理 CNAME 文件。有一些 Hexo 插件可以帮助你自动添加 CNAME 文件到生成的静态网站目录中。一种常用的插件是 “hexo-generator-cname”。</p>
+<p>安装 “hexo-generator-cname” 插件：<br>1<br>2<br>npm install hexo-generator-cname –save</p>
+<p>在 Hexo 项目的 _config.yml 文件中添加以下配置：<br>1<br>2<br>3<br>cname:<br>  domain: bk.lifu.eu.org</p>
+<p>这将告诉插件要生成的 CNAME 文件中包含 “bk.lifu.eu.org”。</p>
+<p>在更新博文后，运行生成静态网站的命令，插件会自动为你生成和包含 CNAME 文件。<br>使用 Hexo 插件的方法更加方便，因为它会自动处理 CNAME 文件的生成，而不需要手动复制文件。这可以减少手动操作的需求。</p>
+<p>我问:</p>
+<p>Administrator@libao2021 MINGW64 ~&#x2F;bk (master)<br>$ npm install hexo-generator-cname –save</p>
+<p>added 1 package, and audited 260 packages in 3s</p>
+<p>27 packages are looking for funding<br>run npm fund for details</p>
+<p>found 0 vulnerabilities<br>npm notice<br>npm notice New major version of npm available! 9.6.1 -&gt; 10.2.1<br>npm notice Changelog: <a target="_blank" rel="noopener" href="https://github.com/npm/cli/releases/tag/v10.2.1">https://github.com/npm/cli/releases/tag/v10.2.1</a><br>npm notice Run npm install -g <a href="mailto:&#110;&#x70;&#109;&#64;&#49;&#x30;&#x2e;&#x32;&#x2e;&#x31;">&#110;&#x70;&#109;&#64;&#49;&#x30;&#x2e;&#x32;&#x2e;&#x31;</a> to update!<br>npm notice</p>
+<p>ChatGPT回答:</p>
+<p>你已经成功安装了 “hexo-generator-cname” 插件，根据你的命令行输出，没有出现任何错误或警告信息。现在，你只需要按照上述方法的步骤2和步骤3来配置插件并让它生成 CNAME 文件即可。这样，每次生成 Hexo 静态网站时，插件会自动包含你的域名信息在 CNAME 文件中。</p>
+<p>要配置插件，打开 Hexo 项目的 _config.yml 文件，添加以下内容：</p>
+<p>1<br>2<br>3<br>cname:<br>  domain: bk.lifu.eu.org</p>
+<p>然后，运行生成静态网站的命令，插件会自动为你生成 CNAME 文件。安装 “hexo-generator-cname” 插件后，你就不再需要手动维护 CNAME 文件。</p>
+<p>我问:</p>
+<p>为什么我在_config.yml文件最底下加入了cname:<br>domain: bk.lifu.eu.org<br>更新博文后创建了CNAME文件，但里面的内容是：your-github-username.github.io</p>
+<p>ChatGPT回答:</p>
+<p>如果在 _config.yml 文件中加入了以下配置：</p>
+<p>1<br>2<br>3<br>cname:<br>  domain: bk.lifu.eu.org</p>
+<p>但在生成的 CNAME 文件中内容却是 “your-github-username.github.io”，这可能是由于你的 Hexo 配置文件中的域名设置被覆盖了。</p>
+<p>首先，请确保 _config.yml 文件中没有其他地方覆盖了 url 或 root 字段。这些字段应该与你的域名相关信息一致，例如：</p>
+<p>1<br>2<br>3<br>url: <a href="http://bk.lifu.eu.org/">http://bk.lifu.eu.org</a><br>root: &#x2F;</p>
+<p>如果你的 _config.yml 文件中没有覆盖域名设置，而仍然出现了问题，你可以尝试以下方法：</p>
+<p>删除 _config.yml 文件底部的 cname 配置。<br>使用以下命令清空 Hexo 缓存：<br>1<br>2<br>hexo clean</p>
+<p>重新生成 Hexo 网站：<br>1<br>2<br>hexo generate</p>
+<p>确保 CNAME 文件正确生成。<br>如果仍然出现问题，可以尝试手动编辑 CNAME 文件，将其内容更改为 “bk.lifu.eu.org”。然后，重新生成静态网站。如果手动编辑 CNAME 文件后仍然无效，有可能是 Hexo 插件或配置的问题，你可能需要查看插件的文档或咨询 Hexo 社区以解决问题。</p>
+<p>我问:</p>
+<p>在哪里设置了域名？</p>
+<p>ChatGPT回答:</p>
+<p>在 Hexo 中，你可以在配置文件 _config.yml 中设置博客的域名。具体设置的地方是 url 字段。这个字段定义了你的博客的基本 URL 地址。</p>
+<p>在 _config.yml 文件中，你可以按照以下示例设置域名：</p>
+<p>1<br>2<br>url: <a href="http://bk.lifu.eu.org/">http://bk.lifu.eu.org</a></p>
+<p>这将指定你的博客的基本 URL 为 “<a href="http://bk.lifu.eu.org".请确保在设置域名时使用正确的协议(http/">http://bk.lifu.eu.org&quot;。请确保在设置域名时使用正确的协议（http</a> 或 https）和域名地址。</p>
+<p>一旦你设置了 url 字段，并且 Hexo 配置正确，生成的 CNAME 文件会自动包含你的域名信息，不需要手动编辑它。如果你之前手动编辑了 CNAME 文件，可以尝试清除它，然后重新生成静态网站以确保 Hexo 正确生成 CNAME 文件。</p>
 
     </main>
     <footer class="post-footer">
@@ -250,12 +287,12 @@
   <nav class="page-nav">
     <div class="page-nav-next page-nav-item">
       
-      <a href="/2023/09/23/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/" rel="next" title="常用命令集合"><i class="fas fa-angle-left"></i><span class="nav-title">常用命令集合</span></a>
+      <a href="/2024/01/01/%E4%B8%8A%E9%99%A2%E6%9D%8E%E5%BE%81%E9%9B%86%E6%A5%B9%E8%81%94-%E8%AA%93%E8%AF%8D%E6%8E%A5%E9%BE%99/" rel="next" title="上院李征集楹联-誓词接龙"><i class="fas fa-angle-left"></i><span class="nav-title">上院李征集楹联-誓词接龙</span></a>
       
     </div>
     <div class="page-nav-prev page-nav-item">
       
-      <a href="/2023/09/23/docker%E8%AF%B4%E6%98%8E/" rel="prev" title="安装docker说明"><span class="nav-title">安装docker说明</span><i class="fas fa-angle-right"></i></a>
+      <a href="/2024/09/16/%E4%B8%80%E9%94%AEhexo%E9%83%A8%E7%BD%B2%E5%B9%B6%E5%A4%87%E4%BB%BD%E6%BA%90%E5%88%B0%E5%88%86%E6%94%AF/" rel="prev" title="一键hexo部署并备份源到分支"><span class="nav-title">一键hexo部署并备份源到分支</span><i class="fas fa-angle-right"></i></a>
       
     </div>
   </nav>
@@ -304,12 +341,6 @@
     
     
     
-    
-    <hr>
-    <div class="post-toc sidebar-item" id="toc-div">
-      <div><i class="fas fa-list-ol"></i>文章目录</div>
-      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B"><span class="toc-text">快速开始</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E5%B8%96%E5%AD%90"><span class="toc-text">创建一个新帖子</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#%E8%BF%90%E8%A1%8C%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">运行服务器</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6"><span class="toc-text">生成静态文件</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0%E8%BF%9C%E7%A8%8B%E7%AB%99%E7%82%B9"><span class="toc-text">部署到远程站点</span></a></li></ol></li></ol></div>
-    </div>
     
     
     
