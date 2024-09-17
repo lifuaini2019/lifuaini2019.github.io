@@ -314,7 +314,7 @@
 <p>Administrator@libao2021 MINGW64 ~&#x2F;bk (master)<br>$ npm install hexo-generator-cname –save</p>
 <p>added 1 package, and audited 260 packages in 3s</p>
 <p>27 packages are looking for funding<br>run npm fund for details</p>
-<p>found 0 vulnerabilities<br>npm notice<br>npm notice New major version of npm available! 9.6.1 -&gt; 10.2.1<br>npm notice Changelog: <a target="_blank" rel="noopener" href="https://github.com/npm/cli/releases/tag/v10.2.1">https://github.com/npm/cli/releases/tag/v10.2.1</a><br>npm notice Run npm install -g <a href="mailto:&#110;&#x70;&#109;&#64;&#49;&#x30;&#x2e;&#x32;&#x2e;&#x31;">&#110;&#x70;&#109;&#64;&#49;&#x30;&#x2e;&#x32;&#x2e;&#x31;</a> to update!<br>npm notice</p>
+<p>found 0 vulnerabilities<br>npm notice<br>npm notice New major version of npm available! 9.6.1 -&gt; 10.2.1<br>npm notice Changelog: <a target="_blank" rel="noopener" href="https://github.com/npm/cli/releases/tag/v10.2.1">https://github.com/npm/cli/releases/tag/v10.2.1</a><br>npm notice Run npm install -g <a href="mailto:&#x6e;&#x70;&#109;&#x40;&#49;&#48;&#46;&#x32;&#x2e;&#49;">&#x6e;&#x70;&#109;&#x40;&#49;&#48;&#46;&#x32;&#x2e;&#49;</a> to update!<br>npm notice</p>
 <p>ChatGPT回答:</p>
 <p>你已经成功安装了 “hexo-generator-cname” 插件，根据你的命令行输出，没有出现任何错误或警告信息。现在，你只需要按照上述方法的步骤2和步骤3来配置插件并让它生成 CNAME 文件即可。这样，每次生成 Hexo 静态网站时，插件会自动包含你的域名信息在 CNAME 文件中。</p>
 <p>要配置插件，打开 Hexo 项目的 _config.yml 文件，添加以下内容：</p>
@@ -510,6 +510,97 @@
   
   <article class="article post card" itemscope itemtype="http://schema.org/Article">
     <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="https://bk.lifu.eu.org/2023/09/23/github%E5%85%8B%E9%9A%86%E5%88%B0%E6%9C%AC%E5%9C%B0/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <meta itemprop="name" content="LI BAO">
+        <meta itemprop="description" content="免费博客不定时更新！！！！！">
+        <meta itemprop="image" content="/images/avatar.png">
+      </span>
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="保持微笑">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link post-title-link-external" href="/2023/09/23/github%E5%85%8B%E9%9A%86%E5%88%B0%E6%9C%AC%E5%9C%B0/" itemprop="url">github克隆到本地2023前个人博客地址</a>
+      </h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2023-09-23T10:00:00+08:00">2023年09月23日 10:00:00</time></span>
+        </span>
+        
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/github%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">github常用方法</span></a></span>
+        </span>
+        
+        
+      </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      
+      <p>更多信息: <a target="_blank" rel="noopener" href="https://23.lifu.us.kg/">我的个人博客2023</a></p>
+<p>第1步：查看 或者 生成一个SSH-Key</p>
+<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C xxx@xxx.com</span><br></pre></td></tr></table></figure>
+<p> 将 “<a href="mailto:&#120;&#120;&#x78;&#64;&#x78;&#120;&#x78;&#46;&#99;&#111;&#x6d;">&#120;&#120;&#x78;&#64;&#x78;&#120;&#x78;&#46;&#99;&#111;&#x6d;</a>“ 替换为你自己GitHub的邮箱地址<br>执行后一直回车即可</p>
+<p>第五步：验证是否设置成功</p>
+<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>可以在网上创建仓库名例如叫：<br>2024bk<br>在本地用git命令执行：</p>
+<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:xxx/2024bk.git</span><br></pre></td></tr></table></figure>
+
+<p>xxx改成自已的名例如我的名是lifuaini2019</p>
+<p>在本地用git命令执行：</p>
+<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:lifuaini2019/2024bk.git</span><br></pre></td></tr></table></figure>
+
+<p>就会克隆2024bk这仓库到本地</p>
+<p>如果用</p>
+<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b befe https://github.com/lifuaini2019/2024bk.git</span><br></pre></td></tr></table></figure>
+<p>会克隆分支befe所有文件到本地<br>(我用这个路径来备份hexo博客源文件)</p>
+<p>cd 2024bk 或到目录下执行git</p>
+<p>上传文件:</p>
+<p>添加所有文件到暂存区：</p>
+<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>后面的.是代表所有文件，如果要指定的例如：<br>例如，如果你要添加一个名为 example.txt 的文件，你可以这样做：</p>
+<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;Hello, World!&quot; &gt; example.txt</span><br></pre></td></tr></table></figure>
+
+<p>使用 git add 命令将新文件添加到 Git 的暂存区：</p>
+<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add example.txt</span><br></pre></td></tr></table></figure>
+<p>对暂存区中的更改进行提交，并添加一个提交信息：</p>
+<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;上传文件说明随便写&quot;</span><br></pre></td></tr></table></figure>
+<p>如果是全部文件直接执行上面的git add .即可<br>对添加到暂存区的文件进行提交，并添加一个提交信息：</p>
+<p><code>git commit -m &quot;提交信息&quot;</code></p>
+<p>将你的提交推送到远程仓库的 main 分支（或 master 分支）：</p>
+<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push origin main</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>执行完以上步骤后，你将成功将本地仓库中的所有文件提交到远程仓库的 main 分支（或 master 分支）。<br>我的备份分支名叫befe</p>
+<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin befe</span><br></pre></td></tr></table></figure>
+
+<p>如果没有分支可以操作创建分支<br>使用以下命令来创建并切换到名为 bepe 的新分支：</p>
+<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b befe</span><br></pre></td></tr></table></figure>
+<p>我最后执行上面这一行代码即可结束部署！</p>
+<p>下面为博客代码的三步执行即可更新<br>！</p>
+<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo c</span><br></pre></td></tr></table></figure>
+
+<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>这样你在部署好hexo博客代码后，再执行上面的备份，就会在befe分支下有着你铁博客源代码了！呵呵简单吧！~</p>
+
+      
+    </main>
+    <footer class="post-footer">
+      
+    </footer>
+  </article>
+  
+  <article class="article post card" itemscope itemtype="http://schema.org/Article">
+    <div class="post-block">
       <link itemprop="mainEntityOfPage" href="https://bk.lifu.eu.org/2023/09/23/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C%E6%A0%B7%E6%9D%BF/">
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
         <meta itemprop="name" content="LI BAO">
@@ -557,6 +648,52 @@
 <h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>更多信息: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">部署</a></p>
+
+      
+    </main>
+    <footer class="post-footer">
+      
+    </footer>
+  </article>
+  
+  <article class="article post card" itemscope itemtype="http://schema.org/Article">
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="https://bk.lifu.eu.org/2023/09/23/%E4%BD%A0%E5%A5%BD%E6%9D%8E%E7%A5%96%E5%AE%87/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <meta itemprop="name" content="LI BAO">
+        <meta itemprop="description" content="免费博客不定时更新！！！！！">
+        <meta itemprop="image" content="/images/avatar.png">
+      </span>
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="保持微笑">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link post-title-link-external" href="/2023/09/23/%E4%BD%A0%E5%A5%BD%E6%9D%8E%E7%A5%96%E5%AE%87/" itemprop="url">你好李祖宇</a>
+      </h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2023-09-23T10:00:00+08:00">2023年09月23日 10:00:00</time></span>
+        </span>
+        
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/%E7%94%9F%E6%B4%BB%E5%88%86%E4%BA%AB/" itemprop="url" rel="index"><span itemprop="name">生活分享</span></a></span>
+        </span>
+        
+        
+      </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      
+      <p>呵呵</p>
+<p>更多信息: <a href="zy/index.html">李祖宇旧网站</a></p>
 
       
     </main>
@@ -715,143 +852,6 @@
     <main class="post-main" itemprop="articleBody">
       
       <p>我的关注推荐<br>换一换<br>习近平出席这些活动传递丰富信息<br>1中国男乒人均i人热<br>2一年涨价27% 辣条赢了LV热<br>3亚洲风采 交相辉映<br>4韩国选手输球后疯狂摔拍拒绝握手<br>5刘德华现身华为发布会<br>6李靓蕾发声明反击王力宏<br>7加入“灵修” 他们从裸辞到负债百万<br>8城管被指执法随心所欲 官方辟谣<br>9男孩河床边玩耍发现恐龙脚印</p>
-
-      
-    </main>
-    <footer class="post-footer">
-      
-    </footer>
-  </article>
-  
-  <article class="article post card" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="https://bk.lifu.eu.org/2023/09/23/github%E5%85%8B%E9%9A%86%E5%88%B0%E6%9C%AC%E5%9C%B0/">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="LI BAO">
-        <meta itemprop="description" content="免费博客不定时更新！！！！！">
-        <meta itemprop="image" content="/images/avatar.png">
-      </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="保持微笑">
-      </span>
-    </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/2023/09/23/github%E5%85%8B%E9%9A%86%E5%88%B0%E6%9C%AC%E5%9C%B0/" itemprop="url">github克隆到本地2023前个人博客地址</a>
-      </h1>
-      <div class="post-meta">
-        
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2023-09-23T10:00:00+08:00">2023年09月23日 10:00:00</time></span>
-        </span>
-        
-        
-        
-        <span class="post-meta-divider divider">|</span>
-        
-        <span class="post-categories">
-          
-          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/github%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">github常用方法</span></a></span>
-        </span>
-        
-        
-      </div>
-    </header>
-    <main class="post-main" itemprop="articleBody">
-      
-      <p>更多信息: <a target="_blank" rel="noopener" href="https://23.lifu.us.kg/">我的个人博客2023</a></p>
-<p>第1步：查看 或者 生成一个SSH-Key</p>
-<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C xxx@xxx.com</span><br></pre></td></tr></table></figure>
-<p> 将 “<a href="mailto:&#120;&#120;&#120;&#64;&#x78;&#x78;&#120;&#46;&#99;&#x6f;&#109;">&#120;&#120;&#120;&#64;&#x78;&#x78;&#120;&#46;&#99;&#x6f;&#109;</a>“ 替换为你自己GitHub的邮箱地址<br>执行后一直回车即可</p>
-<p>第五步：验证是否设置成功</p>
-<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-
-<p>可以在网上创建仓库名例如叫：<br>2024bk<br>在本地用git命令执行：</p>
-<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:xxx/2024bk.git</span><br></pre></td></tr></table></figure>
-
-<p>xxx改成自已的名例如我的名是lifuaini2019</p>
-<p>在本地用git命令执行：</p>
-<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:lifuaini2019/2024bk.git</span><br></pre></td></tr></table></figure>
-
-<p>就会克隆2024bk这仓库到本地</p>
-<p>如果用</p>
-<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b befe https://github.com/lifuaini2019/2024bk.git</span><br></pre></td></tr></table></figure>
-<p>会克隆分支befe所有文件到本地<br>(我用这个路径来备份hexo博客源文件)</p>
-<p>cd 2024bk 或到目录下执行git</p>
-<p>上传文件:</p>
-<p>添加所有文件到暂存区：</p>
-<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>后面的.是代表所有文件，如果要指定的例如：<br>例如，如果你要添加一个名为 example.txt 的文件，你可以这样做：</p>
-<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;Hello, World!&quot; &gt; example.txt</span><br></pre></td></tr></table></figure>
-
-<p>使用 git add 命令将新文件添加到 Git 的暂存区：</p>
-<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add example.txt</span><br></pre></td></tr></table></figure>
-<p>对暂存区中的更改进行提交，并添加一个提交信息：</p>
-<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;上传文件说明随便写&quot;</span><br></pre></td></tr></table></figure>
-<p>如果是全部文件直接执行上面的git add .即可<br>对添加到暂存区的文件进行提交，并添加一个提交信息：</p>
-<p><code>git commit -m &quot;提交信息&quot;</code></p>
-<p>将你的提交推送到远程仓库的 main 分支（或 master 分支）：</p>
-<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push origin main</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>执行完以上步骤后，你将成功将本地仓库中的所有文件提交到远程仓库的 main 分支（或 master 分支）。<br>我的备份分支名叫befe</p>
-<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin befe</span><br></pre></td></tr></table></figure>
-
-<p>如果没有分支可以操作创建分支<br>使用以下命令来创建并切换到名为 bepe 的新分支：</p>
-<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b befe</span><br></pre></td></tr></table></figure>
-<p>我最后执行上面这一行代码即可结束部署！</p>
-<p>下面为博客代码的三步执行即可更新<br>！</p>
-<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo c</span><br></pre></td></tr></table></figure>
-
-<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-
-<figure class="hljs highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>这样你在部署好hexo博客代码后，再执行上面的备份，就会在befe分支下有着你铁博客源代码了！呵呵简单吧！~</p>
-
-      
-    </main>
-    <footer class="post-footer">
-      
-    </footer>
-  </article>
-  
-  <article class="article post card" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="https://bk.lifu.eu.org/2023/09/23/%E4%BD%A0%E5%A5%BD%E6%9D%8E%E7%A5%96%E5%AE%87/">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="LI BAO">
-        <meta itemprop="description" content="免费博客不定时更新！！！！！">
-        <meta itemprop="image" content="/images/avatar.png">
-      </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="保持微笑">
-      </span>
-    </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/2023/09/23/%E4%BD%A0%E5%A5%BD%E6%9D%8E%E7%A5%96%E5%AE%87/" itemprop="url">你好李祖宇</a>
-      </h1>
-      <div class="post-meta">
-        
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2023-09-23T10:00:00+08:00">2023年09月23日 10:00:00</time></span>
-        </span>
-        
-        
-        
-        <span class="post-meta-divider divider">|</span>
-        
-        <span class="post-categories">
-          
-          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/%E7%94%9F%E6%B4%BB%E5%88%86%E4%BA%AB/" itemprop="url" rel="index"><span itemprop="name">生活分享</span></a></span>
-        </span>
-        
-        
-      </div>
-    </header>
-    <main class="post-main" itemprop="articleBody">
-      
-      <p>呵呵</p>
-<p>更多信息: <a href="zy/index.html">李祖宇旧网站</a></p>
 
       
     </main>
